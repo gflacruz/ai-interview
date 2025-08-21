@@ -5,7 +5,7 @@ import { relations } from "drizzle-orm";
 import { QuestionTable } from "./questions";
 import { InterviewTable } from "./interview";
 
-export const experienceLevels = ["junior", "mid", "senior"] as const;
+export const experienceLevels = ["junior", "mid-level", "senior"] as const;
 export type ExperienceLevel = (typeof experienceLevels)[number];
 export const experienceLevelEnum = pgEnum(
   "job_infos_experience_level",
